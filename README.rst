@@ -17,3 +17,20 @@ RocketBoards
 Building EDK2
 
 * https://stackoverflow.com/questions/63725239/build-edk2-in-linux
+
+Both tianocore and altera upstream repos use ubuntu-latest as one of their
+CI runners and install native/cross platform compilers. There is also a long
+list of package deps:
+
+sudo apt install gcc g++ make uuid-dev nasm nuget iasl \
+gcc-multilib-arm-linux-gnueabihf g++-multilib-arm-linux-gnueabihf \
+nodejs curl lcov libx11-dev libxext-dev python3-distutils-extra \
+python3-pip python3-setuptools npm
+
+And the snap with dotnet-runtime-60:
+
+$ sudo snap install dotnet-runtime-60
+
+$ export GCC5_AARCH64_PREFIX="aarch64-linux-gnu-"
+$ export GCC5_ARM_PREFIX="arm-linux-gnueabihf-"
+
