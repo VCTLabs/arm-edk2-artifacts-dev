@@ -1,0 +1,57 @@
+prog_name: repolite
+top_dir: ext  # local directory path for enabled repositories
+pull_with_rebase: false  # use --ff-only if false
+# add new repo_name sections as needed
+repos:
+  - repo_name: uefi-socfpga
+    repo_alias: null
+    repo_url: https://github.com/altera-opensource/uefi-socfpga.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: socfpga_udk202011
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: false
+    repo_install: false
+    repo_enable: true
+  - repo_name: edk2-platforms-socfpga
+    repo_alias: null
+    repo_url: https://github.com/altera-opensource/edk2-platforms-socfpga.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: socfpga_udk202011
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: false
+    repo_install: false
+    repo_enable: true
+  - repo_name: edk2
+    repo_alias: null
+    repo_url: https://github.com/tianocore/edk2.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: null
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: true
+    repo_install: false
+    repo_enable: false
+  - repo_name: edk2-platforms
+    repo_alias: null
+    repo_url: https://github.com/tianocore/edk2-platforms.git
+    repo_depth: 0
+    repo_remote: origin
+    repo_opts: []
+    repo_branch: null
+    repo_hash: null
+    repo_use_rebase: false
+    repo_has_lfs_files: false
+    repo_init_submodules: true
+    repo_install: false
+    repo_enable: false
